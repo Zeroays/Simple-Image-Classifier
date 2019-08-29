@@ -1,13 +1,16 @@
 <html>
     <head>
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+        <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="../static/css/header.css">
         {% block head %}{% endblock %}
     </head>
     <body>
         <div id="top-menu">
             <h1>AI Demo</h1>
-            <a href="image.html"><button id="image-link-classifier">Image (Link) Classifier</button></a>
-            <a href="webcam.html"><button id="webcam-classifier">Webcam Classifier</button></a>
+            <a href="{{ url_for('image_page') }}"><button id="image-link-classifier">Image (Link) Classifier</button></a>
+            <a href="{{ url_for('webcam_page') }}"><button id="webcam-classifier">Webcam Classifier</button></a>
         </div>
         {% block content %}{% endblock %}
     </body>

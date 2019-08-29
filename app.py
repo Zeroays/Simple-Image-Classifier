@@ -6,11 +6,11 @@ app = Flask(__name__)
 def index():
     return render_template('image.html')
 
-@app.route('/image.html')
+@app.route('/img')
 def image_page():
     return render_template('image.html')
 
-@app.route('/webcam.html')
+@app.route('/webcam')
 def webcam_page():
     return render_template('webcam.html')
 
