@@ -1,13 +1,17 @@
+{% extends "header.html" %}
 <html>
   <head>
+    {% block head %}
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
     <link rel="stylesheet" href="../static/css/webcam.css">
+    {% endblock %}
   </head>
   <body>
+    {% block content %}
     <div id="console"></div>
     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
     <br>
@@ -16,5 +20,6 @@
     <button id="class-c">Add C</button>
     <!-- Load index.js after the content of the page -->
     <script src="../static/js/webcam.js"></script>
+    {% endblock %}
   </body>
 </html>

@@ -1,11 +1,15 @@
+{% extends "header.html" %}
 <html>
   <head>
+    {% block head %}
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    {% endblock %}
   </head>
   <body>
+    {% block content %}
     <div id="console"></div>
     <!-- Add an image that we will use to test -->
     <h1>Press Submit with <i>Imgur</i> Link in TextBox to classify new image</h1>
@@ -17,5 +21,6 @@
     </div>
     <h4 id="result"></h4>
     <script src="../static/js/image.js"></script>
+    {% endblock %}
   </body>
 </html>
