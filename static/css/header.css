@@ -1,0 +1,33 @@
+body {
+    margin : 0;
+    padding : 0;
+    background-color : black;
+}
+
+#top-menu, #top-menu image-classifier, #top-menu webcam-classifier #upload {
+    background-color : darkslategrey;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color : white;
+}
+
+#top-menu h1 {
+    padding-left: 50px;
+    color : white;
+    display : inline-block;
+    text-align: left;
+}
+
+#top-menu button {
+    padding : 15px 15px;
+    border-radius: 0.25em;
+    font-size: 1em;
+    color : lightgrey;
+    float: right;   
+}
+
+#top-menu button:hover {
+    color : white;
+    cursor : pointer;
+}
