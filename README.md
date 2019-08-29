@@ -12,6 +12,7 @@ in Terminal
 # Installation
 Navigate to folder, and copy
 ```
+pip3 install -r requirements
 export FLASK_APP=app.py
 flask run
 ```
